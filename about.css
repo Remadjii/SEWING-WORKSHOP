@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cyan; /* Light gray background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Text color */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333; /* Dark background color for navbar */
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f7b42c; /* Yellow highlight color */
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 3rem 2rem;
+    background-color: cyan; /* White background for the about section */
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333; /* Dark text for headings */
+}
+
+.about-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #666; /* Slightly lighter color for the text */
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Animation for FadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Adjust font size for small devices */
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}

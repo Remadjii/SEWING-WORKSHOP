@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Sewing Workshop</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="navbar" os-animation="fadeInUp">
+        <h1 os-animation="fadeInUp">SEWING WORKSHOP</h1>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="services.html">Services</a>
+            <a href="galerie.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p class="about-text" os-animation="fadeInUp">
+                Welcome to our Sewing Workshop! We are passionate about creating high-quality garments and providing
+                sewing services to help you bring your ideas to life. Our skilled team of professionals has years of
+                experience in the industry and is dedicated to providing personalized services to suit your needs.
+            </p>
+            <p class="about-text" os-animation="fadeInUp">
+                Whether you're looking for custom tailoring, alterations, or even sewing lessons, we are here to
+                assist you. We pride ourselves on attention to detail, creativity, and customer satisfaction. Our
+                workshop is equipped with the latest tools and materials to ensure the best possible results.
+            </p>
+            <p class="about-text" os-animation="fadeInUp">
+                Join us and be part of our sewing community. Let's make something beautiful together!
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Toggle the menu on mobile devices
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

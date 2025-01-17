@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Sewing Workshop</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="navbar" os-animation="fadeInUp">
+    <h1 os-animation="fadeInUp">SEWING WORKSHOP</h1>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="galerie.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <h2 os-animation="fadeInUp">Our Services</h2>
+    <div class="services-container">
+        <!-- Service 1 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service1.jpg" alt="Service 1">
+            <h3>Sewing Classes</h3>
+            <p>We offer beginner and advanced sewing classes for all ages. Learn how to sew, design, and create your own projects!</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service2.jpg" alt="Service 2">
+            <h3>Custom Clothing</h3>
+            <p>Need a custom design? Our experts will create tailored clothing made just for you, whether it’s formal or casual.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service3.jpg" alt="Service 3">
+            <h3>Repairs & Alterations</h3>
+            <p>We offer repairs and alterations on clothing, from resizing to fixing tears and zippers.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service4.jpg" alt="Service 4">
+            <h3>Embroidery Services</h3>
+            <p>Add a personalized touch with embroidery services for clothing, accessories, and more!</p>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service5.jpg" alt="Service 5">
+            <h3>Fabric & Material Sales</h3>
+            <p>We offer a wide selection of fabrics and materials to choose from for your sewing projects.</p>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-item" os-animation="fadeInUp">
+            <img src="service6.jpg" alt="Service 6">
+            <h3>Design Consultation</h3>
+            <p>Get professional design advice for your sewing projects, from concept to final creation.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Toggle the menu on mobile devices
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

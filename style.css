@@ -1,0 +1,335 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: pink;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f7b42c;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+/* Home Page */
+.home {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url('header2.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+color: #fff;
+text-align: center;
+padding-top: 80px;
+padding: -30px;
+}
+
+/* Responsive styles for home background */
+@media (max-width: 768px) {
+.home {
+background-size:cover;
+background-position: center;
+}
+}
+.home h1 {
+font-size: 3rem;
+margin-bottom: 20px;
+}
+.home p {
+font-size: 1.5rem;
+margin-bottom: 30px;
+}
+
+
+/* Partenaires Section */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    }
+    
+    .section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    }
+    
+    .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    }
+    
+    .partner-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    }
+    
+    .partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: cyan;
+    }
+    
+    .partner-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    }
+
+    
+    .partner-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    }
+    
+    .partner-card p {
+    font-size: 14px;
+    color: #f10000;
+    margin: 5px 0;
+    }
+
+    .footer {
+        background-color: #222;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    /* Locations Section */
+    .footer-locations {
+        flex: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .location {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .location h3 {
+        font-size: 1.5rem;
+        color: #e63946;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .location h3::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #e63946;
+        margin-top: 10px;
+    }
+
+    .location p {
+        font-size: 0.9rem;
+        color: #bbb;
+        line-height: 1.6;
+    }
+
+    .location p strong {
+        color: #fff;
+    }
+
+    /* Social Media Section */
+    .footer-social {
+        flex: 1;
+        min-width: 250px;
+        text-align: left;
+    }
+
+    .footer-social h3 {
+        font-size: 1.5rem;
+        color: #e63946;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .footer-social h3::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #e63946;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        color: #fff;
+        font-size: 1.2rem;
+        text-decoration: none;
+        background: #333;
+        padding: 10px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        background: #e63946;
+        color: #fff;
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #bbb;
+        border-top: 1px solid #444;
+        padding-top: 0px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-locations {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-social {
+            text-align: center;
+        }
+
+        .location h3::after,
+        .footer-social h3::after {
+            margin: 10px auto 0;
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+.location p{
+text-align: left;
+padding: 0px 40px;
+}
+    }
